@@ -16,6 +16,10 @@ import test2_2 from '../screens/tests/test2.2'
 import test2_3 from '../screens/tests/test2.3'
 
 import test3 from '../screens/tests/test3'
+import test3_1 from '../screens/tests/test3.1'
+import test3_2 from '../screens/tests/test3.2'
+import test3_3 from '../screens/tests/test3.3'
+
 import test4 from '../screens/tests/test4'
 
 const RootRouter = createStackNavigator(
@@ -53,6 +57,16 @@ const RootRouter = createStackNavigator(
         test3: {
             screen: test3,
         },
+        test3_1: {
+            screen: test3_1,
+        },
+        test3_2: {
+            screen: test3_2,
+        },
+        test3_3: {
+            screen: test3_3,
+        },
+
         test4: {
             screen: test4,
         },
@@ -60,6 +74,7 @@ const RootRouter = createStackNavigator(
     {
         headerMode: 'screen',
         mode: 'modal',
+        // initialRouteName: 'test3_3',
         navigationOptions: ({ navigation }) => ({
             header: null
         }),
