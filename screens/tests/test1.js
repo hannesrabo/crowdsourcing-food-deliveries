@@ -11,10 +11,10 @@ export default class test1 extends Component {
     render() {
         return (
             <View style={{ flex: 1, width: "100%", padding: 20, }}>
-                <Text style={{ paddingBottom: 20 }}>1</Text>
-                <View style={{ paddingBottom: 20 }} ><Button title="Version 1" onPress={() => { this.goToPage("test1_1") }} /></View>
-                <View style={{ paddingBottom: 20 }} ><Button title="Version 2" onPress={() => { this.goToPage("test1_2") }} /></View>
-                <View style={{ paddingBottom: 20 }} ><Button title="Version 3" onPress={() => { this.goToPage("test1_3") }} /></View>
+                <Text style={{ paddingBottom: 20, fontSize: 30 }}>Test 1 - How to specify order details</Text>
+                <View style={{ paddingBottom: 20 }} ><Button title="Version 1" onPress={() => { this.goToPage("test1_1") }} color='#9c0000' /></View>
+                <View style={{ paddingBottom: 20 }} ><Button title="Version 2" onPress={() => { this.goToPage("test1_2") }} color='#9c0000' /></View>
+                <View style={{ paddingBottom: 20 }} ><Button title="Version 3" onPress={() => { this.goToPage("test1_3") }} color='#9c0000' /></View>
 
             </View>
         )

@@ -3,7 +3,7 @@ import { View, Text, Button } from 'react-native'
 
 import NavigationService from '../../routing/NavigationService';
 
-export default class test2_1 extends Component {
+export default class test2_2 extends Component {
 
     render() {
         return (

@@ -12,11 +12,11 @@ export default class OverviewScreen extends Component {
     render() {
         return (
             <View style={{ flex: 1, width: "100%", padding: 20, }}>
-                <Text style={{ paddingBottom: 20 }}>This is the overview screen</Text>
-                <View style={{ paddingBottom: 20 }} ><Button title="Test 1" onPress={() => { this.goToPage("test1") }} /></View>
-                <View style={{ paddingBottom: 20 }} ><Button title="Test 2" onPress={() => { this.goToPage("test2") }} /></View>
-                <View style={{ paddingBottom: 20 }} ><Button title="Test 3" onPress={() => { this.goToPage("test3") }} /></View>
-                <View style={{ paddingBottom: 20 }} ><Button title="Test 4" onPress={() => { this.goToPage("test4") }} /></View>
+                <Text style={{ paddingBottom: 20, fontSize: 30 }}>Tests</Text>
+                <View style={{ paddingBottom: 20 }} ><Button title="Test 1" onPress={() => { this.goToPage("test1") }} color='#9c0000' /></View>
+                <View style={{ paddingBottom: 20 }} ><Button title="Test 2" onPress={() => { this.goToPage("test2") }} color='#9c0000' /></View>
+                <View style={{ paddingBottom: 20 }} ><Button title="Test 3" onPress={() => { this.goToPage("test3") }} color='#9c0000' /></View>
+                <View style={{ paddingBottom: 20 }} ><Button title="Test 4" onPress={() => { this.goToPage("test4") }} color='#9c0000' /></View>
             </View>
         )
     }
