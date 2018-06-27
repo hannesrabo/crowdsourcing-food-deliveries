@@ -28,6 +28,7 @@ import test4_3 from '../screens/tests/test4.3'
 import test5 from '../screens/tests/test5'
 import test5_1 from '../screens/tests/test5.1'
 import test5_2 from '../screens/tests/test5.2'
+import test5_2_contract from '../screens/tests/test5.2_contract'
 
 const RootRouter = createStackNavigator(
     {
@@ -95,6 +96,9 @@ const RootRouter = createStackNavigator(
         },
         test5_2: {
             screen: test5_2,
+        },
+        test5_2_contract: {
+            screen: test5_2_contract,
         },
     },
     {
