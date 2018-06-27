@@ -17,6 +17,7 @@ export default class OverviewScreen extends Component {
                 <View style={{ paddingBottom: 20 }} ><Button title="Test 2" onPress={() => { this.goToPage("test2") }} color='#9c0000' /></View>
                 <View style={{ paddingBottom: 20 }} ><Button title="Test 3" onPress={() => { this.goToPage("test3") }} color='#9c0000' /></View>
                 <View style={{ paddingBottom: 20 }} ><Button title="Test 4" onPress={() => { this.goToPage("test4") }} color='#9c0000' /></View>
+                <View style={{ paddingBottom: 20 }} ><Button title="Test 5" onPress={() => { this.goToPage("test5") }} color='#9c0000' /></View>
             </View>
         )
     }
