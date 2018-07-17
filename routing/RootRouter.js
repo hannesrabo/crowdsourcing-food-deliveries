@@ -1,18 +1,19 @@
-import React from 'react'
-import { createStackNavigator } from 'react-navigation'
+import React from '../../../../.cache/typescript/2.9/node_modules/@types/react'
+import { createStackNavigator } from '../../../../.cache/typescript/2.9/node_modules/@types/react-navigation'
 import { Easing, Animated } from 'react-native'
 
 import OverviewScreen from '../screens/OverviewScreen/OverviewScreen'
 
+// These are all of the tests. They are all added here for very easy navigation.
 import test1 from '../screens/tests/test1'
 import test1_1 from '../screens/tests/test1.1'
 import test1_2 from '../screens/tests/test1.2'
 import test1_3 from '../screens/tests/test1.3'
 
-
 import test2 from '../screens/tests/test2'
 import test2_1 from '../screens/tests/test2.1'
 import test2_2 from '../screens/tests/test2.2'
+import test2_3 from '../screens/tests/test2.3'
 
 import test3 from '../screens/tests/test3'
 import test3_1 from '../screens/tests/test3.1'
@@ -22,12 +23,7 @@ import test3_3 from '../screens/tests/test3.3'
 import test4 from '../screens/tests/test4'
 import test4_1 from '../screens/tests/test4.1'
 import test4_2 from '../screens/tests/test4.2'
-import test4_3 from '../screens/tests/test4.3'
-
-import test5 from '../screens/tests/test5'
-import test5_1 from '../screens/tests/test5.1'
-import test5_2 from '../screens/tests/test5.2'
-import test5_2_contract from '../screens/tests/test5.2_contract'
+import test4_2_contract from '../screens/tests/test4.2_contract'
 
 const RootRouter = createStackNavigator(
     {
@@ -44,6 +40,7 @@ const RootRouter = createStackNavigator(
         test1_2: {
             screen: test1_2,
         },
+
         test1_3: {
             screen: test1_3,
         },
@@ -56,6 +53,9 @@ const RootRouter = createStackNavigator(
         },
         test2_2: {
             screen: test2_2,
+        },
+        test2_3: {
+            screen: test2_3,
         },
 
         test3: {
@@ -80,21 +80,8 @@ const RootRouter = createStackNavigator(
         test4_2: {
             screen: test4_2,
         },
-        test4_3: {
-            screen: test4_3,
-        },
-
-        test5: {
-            screen: test5,
-        },
-        test5_1: {
-            screen: test5_1,
-        },
-        test5_2: {
-            screen: test5_2,
-        },
-        test5_2_contract: {
-            screen: test5_2_contract,
+        test4_2_contract: {
+            screen: test4_2_contract,
         },
     },
     {

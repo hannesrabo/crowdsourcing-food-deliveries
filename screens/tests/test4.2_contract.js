@@ -1,10 +1,10 @@
-import React, { Component } from '../../../../../.cache/typescript/2.9/node_modules/@types/react'
+import React, { Component } from 'react'
 import { View, Text, Button } from 'react-native'
 
 import NavigationService from '../../routing/NavigationService';
 import { ScrollView } from 'react-native-gesture-handler';
 
-export default class test5 extends Component {
+export default class test4 extends Component {
     goToPage = (pageName) => {
         NavigationService.navigate(pageName)
     }
@@ -108,8 +108,7 @@ export default class test5 extends Component {
                             3.2        Language
                             The language of the Contract and of all communi
                             cations between the Parties shall be English.
-                            August , 2008: Edition 3 of CIDB document 1019
-                            Page 2
+                            August , 2008: Edition 3 of
                             Contract for the supply and delivery of goods
                             </Text>
                         <Text>
@@ -142,7 +141,7 @@ export default class test5 extends Component {
                     </Text>
                     </ScrollView>
                 </View>
-                <Button title="Accept" onPress={() => { this.goToPage("test5_2") }} color='#9c0000' />
+                <Button title="Accept" onPress={() => { this.goToPage("test4_2") }} color='#9c0000' />
             </View>
         )
     }

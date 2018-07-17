@@ -4,7 +4,7 @@ import { View, Text, TouchableOpacity } from 'react-native'
 import NavigationService from '../../routing/NavigationService';
 import { ScrollView } from 'react-native-gesture-handler';
 
-export default class test1_1 extends Component {
+export default class test2_1 extends Component {
 
     render() {
         return (

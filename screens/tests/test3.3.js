@@ -1,27 +1,46 @@
 import React, { Component } from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, Button } from 'react-native'
 
-import NavigationService from '../../routing/NavigationService';
+import BarButton from '../../components/Button/BarButton/BarButton'
 
-export default class test3_2 extends Component {
+import { TextInput, ScrollView } from 'react-native-gesture-handler';
+
+export default class test3_3 extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            weight: '0'
+        }
+    }
+
+    change = event => {
+        this.setState({
+            weight: event.text
+        })
+    }
 
     render() {
         return (
-            <View style={{ flex: 1, width: "100%", padding: 20, paddingBottom: 40, backgroundColor: 'white' }}>
-                <Text style={{ paddingBottom: 20, fontSize: 30, }}>Personal Recommendation:</Text>
-                <View style={{ borderColor: 'black', borderWidth: 2, marginBottom: 20, flexDirection: 'row', justifyContent: 'space-between' }}>
-                    <Text style={{ fontSize: 20, margin: 15, flex: 2 }} >Carrots</Text>
-                    <Text style={{ fontSize: 15, margin: 15, flex: 5 }} >Carrots grows well in your area and has seen an increasing demand.</Text>
+            <ScrollView style={{ flex: 1, width: "100%", padding: 20, paddingBottom: 40, backgroundColor: 'white' }}>
+                <Text style={{ paddingBottom: 20, fontSize: 50, }}>Validate delivery:</Text>
+                <View style={{ borderColor: 'black', borderWidth: 2, flex: 7, padding: 20, marginBottom: 40 }}>
+                    <Text style={{ paddingBottom: 20, fontSize: 30, }} >Product:</Text>
+                    <Text style={{ paddingBottom: 20, fontSize: 40, }} >Carrots</Text>
+                    <Text style={{ paddingBottom: 20, fontSize: 30, }} >Weight (KGs):</Text>
+                    <TextInput style={{ paddingBottom: 20, fontSize: 40, }} value={this.state.weight} keyboardType='numeric' onChange={this.change} />
+                    <Text style={{ paddingBottom: 20, fontSize: 30, }} >Class:</Text>
+                    <BarButton values={["Extra", "I", "II", "III"]} />
                 </View>
-                <View style={{ borderColor: 'black', borderWidth: 2, marginBottom: 20, flexDirection: 'row', justifyContent: 'space-between' }}>
-                    <Text style={{ fontSize: 20, margin: 15, flex: 2 }} >Potatoes</Text>
-                    <Text style={{ fontSize: 15, margin: 15, flex: 5 }} >During the upcoming months, the production of potatoes falls and prices increase.</Text>
+                <View style={{ flexDirection: 'row', flex: 1, width: '100%' }}>
+                    <View style={{ marginRight: 20, width: '45%' }}>
+                        <Button title="Decline" onPress={() => { console.log("Confirmed") }} color='#9d0000' />
+                    </View>
+                    <View style={{ width: '45%' }}>
+                        <Button title="Confirm" onPress={() => { console.log("Confirmed") }} color='#009d34' />
+                    </View>
                 </View>
-                <View style={{ borderColor: 'black', borderWidth: 2, marginBottom: 20, flexDirection: 'row', justifyContent: 'space-between' }}>
-                    <Text style={{ fontSize: 20, margin: 15, flex: 2 }} >Tomatoes</Text>
-                    <Text style={{ fontSize: 15, margin: 15, flex: 5 }} >Drought in northern parts of Kenya is causing problems for farmers. The prices are increasing on the general market.</Text>
-                </View>
-            </View>
+            </ScrollView>
         )
     }
 }

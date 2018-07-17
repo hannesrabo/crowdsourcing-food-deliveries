@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { View, Text, Button } from 'react-native'
 import BarButton from '../../components/Button/BarButton/BarButton'
 
-import NavigationService from '../../routing/NavigationService';
 
 export default class test1_3 extends Component {
 

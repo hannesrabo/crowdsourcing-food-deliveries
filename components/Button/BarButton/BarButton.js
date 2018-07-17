@@ -1,6 +1,6 @@
-import React from 'react'
+import React from '../../../../../../.cache/typescript/2.9/node_modules/@types/react'
 import { Text, TouchableOpacity, View } from 'react-native'
-import PropTypes from 'prop-types'
+import PropTypes from '../../../../../../.cache/typescript/2.9/node_modules/@types/prop-types'
 
 import { styles } from './BarButtonStyle'
 

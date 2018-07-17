@@ -3,6 +3,13 @@
     "sdkVersion": "27.0.0",
     "androidStatusBar": {
       "backgroundColor": "#000000"
+    },
+    "name": "Farmer Tests",
+    "icon": "/home/hrabo/dev/app/crowdsourcing-food-deliveries/assets/icons/icon.png",
+    "version": "1.0.0",
+    "slug": "crowdsourcing-food-deliveries",
+    "android": {
+      "package": "com.github.hannesrabo.crowdsourcing"
     }
   }
 }

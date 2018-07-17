@@ -1,4 +1,9 @@
-import { NavigationActions } from 'react-navigation';
+/**
+ * This file provides a simple interface that could 
+ * be imported from anywhere to provide simple navigation
+ */
+
+import { NavigationActions } from '../../../../.cache/typescript/2.9/node_modules/@types/react-navigation';
 
 let _navigator;
 
@@ -22,8 +27,6 @@ function pop(option) {
     })
   );
 }
-
-// add other navigation functions that you need and export them
 
 export default {
   navigate,
