@@ -8,7 +8,7 @@ The main research question for the thesis is regarding how to use crowdsourcing 
 # Technology
 This project is written in react native using expo for easier development.
 
-# Test
+# Tests
 There are 4 primary tests in this project
 
 1. How to accept new orders: on demand or longer contracts
