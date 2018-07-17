@@ -21,4 +21,4 @@ None of the tests are complete with just the screens as the focus was to provide
 # Example
 The first test contains the following screens:
 
-!(prototype 1)[doc/img/test_1.png]
+![prototype 1](doc/img/test_1.png)
